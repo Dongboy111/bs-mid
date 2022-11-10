@@ -1,18 +1,14 @@
 from typing import Tuple, Optional, Union, List
 from gym import spaces
 import gym
-from gym.core import RenderFrame
 
 
 
-
-R = 8.1314
 
 
 
 class BaseEnv():
     def __init__(self):
-        super(BaseEnv,self).__init__()
         self.action_space = spaces.Discrete(100)      #动作数量
         self.observation_space = spaces.Discrete(1000)#观察空间
         self.tempActionValue = [] #经过调整的未知参数数值
@@ -24,6 +20,8 @@ class BaseEnv():
         :param action:需要调整的参数是对未确定参数向大调还是小调 1 代表向大调整，0代表向小调整
         :return: 四元组
         """
+
+
 
 
 
