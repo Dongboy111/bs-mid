@@ -23,6 +23,7 @@ def getCorrosionPointC(alpha, Ic_h0, n, E, Ee):
 def getCorrosionPointM(alpha:float, Ic_m0:list, n:int, E:list, Ee:list):
     Ia_m = Ic_m0 * math.exp((alpha*n*F*(E-Ee))/(R*T))
 
+#计算ecorr参数
 def getEcorr():
     return
 
